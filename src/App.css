@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+.booking-container {
+  max-width: 500px;
+  height: 370px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  background-color: antiquewhite;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-self: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.price-info {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.guest-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.input-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.input {
+  width: 200px;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(247, 240, 240);
+}
+
+.input2{
+  width: 448px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.input3{
+  border-top-left-radius: 15px;
+}
+
+.input4{
+  border-top-right-radius: 15px;
+}
+
+.nightly-charge,
+.extra-guest-charge {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.submit-button {
+  background-color: rgb(223, 44, 140);
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 500px;
+  border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button:hover {
+  background-color: rgb(208, 82, 149);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.booking-details {
+  margin-top: 20px;
+  float: right;
+}
+
+.booking-details p{
+  font-size: 13px;
+}
+
+.details-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 5px;
+
+}
+
+.guest-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.guest-type span {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.guest-type svg {
+  cursor: pointer;
+  color: grey;
+}
+
+.guest-type svg:hover {
+  color: #0056b3;
 }
